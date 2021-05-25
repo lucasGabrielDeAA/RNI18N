@@ -1,7 +1,6 @@
 import React, { FC, useMemo, useCallback } from 'react';
 import { FlatList, TouchableOpacity } from 'react-native';
-import { useTheme, useNavigation } from '@react-navigation/native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { useTheme } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
 
 import { Column, Text, Row } from 'src/components';
@@ -9,7 +8,6 @@ import { Column, Text, Row } from 'src/components';
 const Settings: FC = () => {
   const { t, i18n } = useTranslation('language');
   const { colors } = useTheme();
-  const { navigate } = useNavigation();
 
   const languages = useMemo(() => {
     return [
@@ -24,10 +22,8 @@ const Settings: FC = () => {
 
   return (
     <Column alignItems='center' flex={1} justifyContent='center'>
-      {/* <Text>{t('')}</Text> */}
-
       <FlatList
-        style={{ marginVertical: 50 }}
+        contentContainerStyle={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}
         showsVerticalScrollIndicator={false}
         data={languages}
         keyExtractor={(_, index): string => index.toString()}

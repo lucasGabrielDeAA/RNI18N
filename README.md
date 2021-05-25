@@ -1,6 +1,6 @@
 # RNI18N
 
-Repository bootstraped with [React-Native-Tempalte-Nave-Typescript](https://github.com/naveteam/react-native-nave-typescript) to handle I18n on react-native applications. In the Home screen you will find a simple screen with a button to go to a Settings screen and select the desired language to your application, after changed, this language is stored and you can go back to Home screen, or even close and re-open the app to see the language updated. 
+Repository bootstraped with [React-Native-Template-Nave-Typescript](https://github.com/naveteam/react-native-nave-typescript) to handle I18n on react-native applications. In the Home screen you will find a simple screen with a button to go to a Settings screen and select the desired language to your application, after changed, this language is stored and you can go back to Home screen, or even close and re-open the app to see the language updated. 
 
 ## :wrench: Running
 
@@ -40,7 +40,7 @@ IOS
   yarn ios
 ```
 
-`[DISCLAIMER]` This app uses the following dependencies to manage internationalization
+This app uses the following dependencies to manage internationalization
 
 - [React-i18next](https://github.com/i18next/react-i18next)
 - [Intl](https://github.com/andyearnshaw/Intl.js)
