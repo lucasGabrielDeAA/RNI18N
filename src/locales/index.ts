@@ -29,7 +29,7 @@ const languageDetector = {
       phoneLanguage = NativeModules.SettingsManager.settings.AppleLocale;
     }
 
-    phoneLanguage = phoneLanguage.replace('_', '-');
+    phoneLanguage = phoneLanguage?.replace('_', '-');
 
     return callback(phoneLanguage);
   },
